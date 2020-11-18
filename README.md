@@ -1,2 +1,2 @@
 # CSPDarknet53
-Pytorch implementation of CSPDarknet53
+Pytorch Implementation of CSPDarknet53
