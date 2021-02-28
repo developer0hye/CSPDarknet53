@@ -131,10 +131,10 @@ class CSPDarknet53(nn.Module):
     ])
 
     self.feature_channels = feature_channels
-    self.num_features = num_features
+    self.num_classes = num_classes
 
     self.gap = nn.AdaptiveAvgPool2d((1, 1))
-    self.fc = nn.Conv2d(1024, self.num_features, 1)
+    self.fc = nn.Conv2d(1024, self.num_classes, 1)
 
     for m in self.modules():
       if isinstance(m, nn.Conv2d):
